@@ -80,11 +80,12 @@ header {
 }
 
 #title-block h1 {
-    line-height: 1;
     display: inline-block;
+    width: 100%;
     vertical-align: middle;
     font-size: 1em;
     font-weight: normal;
+    line-height: 1;
 }
 
 #title-block h1::first-line {
