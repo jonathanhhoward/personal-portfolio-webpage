@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body {
+    margin: 0;
+    background-color: #8fbbbd;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.float {
+    box-shadow: 10px 10px 20px #152324;
+}
+
+.float:hover {
+    box-shadow: 5px 5px 10px #152324;
+    font-weight: bold;
+}
+
+.float:active {
+    box-shadow: none;
+    background-color: #bd8fbb;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #8fbbbd;
+}
+
+#navbar {
+    float: right;
+    width: 100%;
+    max-width: 480px;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    float: left;
+    width: 33.3%;
+    line-height: 2;
+}
+
+#menu a {
+    display: block;
+}
+
+#menu a:hover {
+    background-color: #bbbd8f;
+    font-weight: bold;
+}
+
+#menu a:active {
+    background-color: #bd8fbb;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#title-block {
+    line-height: 100vh;
+}
+
+#title-block h1 {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#title-block h1::first-line {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#projects {
+    padding-top: 2em;
+}
+
+.project-tile {
+    margin: 1em;
+    padding: 10px 10px 0;
+    border-radius: 2px;
+    background-color: #bbbd8f;
+}
+
+.project-tile img {
+    max-width: 300px;
+    border: none;
+}
+
+.caption {
+    line-height: 2;
+}
+
+#more {
+    margin: 1em auto;
+}
+
+#contact {
+    padding-top: 2em;
+    padding-bottom: 50px;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 1em;
+    border-radius: 2px;
+    background-color: #bbbd8f;
+    line-height: 2;
+}
+
+/* @media does nothing. Required for project but not needed. */
+@media screen and (max-width: 480px) {
+    html {
+        border: none;
+    }
+}
